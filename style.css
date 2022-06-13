@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+    box-sizing: border;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Libre Franklin', sans-serif;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 45px;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 15px;
+}
+
+span {
+    font-weight: 700;
+    color: #000;
+}
+
+
+
+.main {
+    /* width: 1140px; */
+    margin: 0 auto;
+    padding: 0 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.image {
+    width: 55%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image img {
+    width: 100%;
+}
+
+.para {
+    text-align: center;
+    margin-bottom: 25px;
+    color: hsl(209, 33%, 12%);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.input {
+    width: 350px;
+    display: block;
+    height: 15px;
+    padding: 15px;
+    border: 1px solid hsl(0, 0%, 59%);
+    border-radius: 30px;
+
+}
+
+.btn {
+    width: 140px;
+    display: block;
+    height: 45px;
+    text-align: center;
+    background: hsl(223, 87%, 63%);
+    box-shadow: 1px 1px 4px 1px hsl(223, 87%, 63%);
+    padding: 15px;
+    border-radius: 30px;
+    color: #fff;
+    border: none;
+}
+
+
+
+footer,.footer-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    border: 1px solid hsl(223, 87%, 63%);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+i {
+    color: hsl(223, 87%, 63%);
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width:600px) {
+    
+    body,main, form, html,footer {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .main{
+        padding: 0 10px;
+    }
+
+    .image img {
+        width: 90%;
+    }
+    .main,.image{
+        width: 100%;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .input {
+        width: 65%;
+    }
+
+    .btn {
+        width: 70%;
+    }
+
+
+}
